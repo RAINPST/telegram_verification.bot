@@ -4,7 +4,7 @@ from telegram import ChatPermissions, Update
 from telegram.ext.callbackcontext import CallbackContext
 
 # Токен берём из переменных окружения Railway
-TOKEN = os.getenv("8407685621:AAGCRfidEQ_oE5jZfabFufCaKyxJkhVgSBA")
+TOKEN = os.getenv("BOT_TOKEN")
 
 # Ограниченные права (новичок = mute)
 restricted_permissions = ChatPermissions(
@@ -68,3 +68,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
