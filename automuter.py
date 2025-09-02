@@ -57,6 +57,7 @@ def approve(update: Update, context: CallbackContext):
     update.message.reply_text(f"✅ {username} получил доступ!", parse_mode="HTML")
 
 def main():
+    print("BOT_TOKEN =", TOKEN)
     updater = Updater(TOKEN, use_context=True)
     dp = updater.dispatcher
 
@@ -68,4 +69,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
